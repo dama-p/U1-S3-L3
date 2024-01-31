@@ -1,13 +1,18 @@
 const form = document.querySelector("form");
-const newTask = document.getElementById("newTask");
+const taskInput = document.getElementById("taskInput");
 const taskList = document.getElementById("taskList")
 
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+})
 
-const addTask = function () {
-    const taskText = newTask.value
+
+
+function addTask() {
+    const taskText = taskInput.value
     const li = document.createElement("li");
-    li.innerText = taskText;
     taskList.appendChild(li);
+    li.innerText = taskText;
 }
 
-newTask.onclick = addTask()
+
