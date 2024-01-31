@@ -13,13 +13,15 @@ function addTask() {
     const li = document.createElement("li");
     taskList.appendChild(li);
     li.innerText = taskText;
+    li.style = "cursor: pointer";
 
     li.onclick = function () {
         li.classList.toggle("strike")
+        
     }
 
     const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "Delete";
+    deleteBtn.textContent = "delete";
     deleteBtn.addEventListener("click", deleteTask);
     li.appendChild(deleteBtn);
     deleteBtn.classList.add("delete")

@@ -22,9 +22,12 @@ h1 {
 }
 
 #taskList {
-    width: 400px;
     list-style: none;
     text-align: center;
+    display: inline-block;
+    margin-inline: auto;
+    padding-right: 60px;
+    
 
 
 }
@@ -37,6 +40,14 @@ li {
     padding-block: 10px;
 }
 
-.delete {
-    margin-left: 30px;
+
+button {
+    margin-left: 20px;
+    background-color: rgb(255, 252, 240);
+    border: none;
+    font-size: 12px;
+    color: rgb(213, 160, 116);
+    padding-block: 3px;
+    border-radius: 3px;
+    
 }
