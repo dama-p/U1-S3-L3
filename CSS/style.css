@@ -1,0 +1,27 @@
+body {
+    background-color: antiquewhite;
+    text-align: center;
+    font-family: 'Special Elite', system-ui;
+}
+
+h1 {
+    margin-top: 200px;
+    letter-spacing: 1rem;
+
+    
+
+}
+
+#newTask {
+    width: 300px;
+    padding: 5px;
+    border: 2px solid rgb(213, 160, 116);
+    border-radius: 5px;
+    background-color: rgb(255, 252, 240);
+    margin-top: 30px;
+}
+
+.submitted {
+    width: 300px;
+
+}
