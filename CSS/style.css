@@ -25,7 +25,14 @@ h1 {
     width: 400px;
     list-style: none;
     text-align: center;
-    
+
 
 }
 
+.strike {
+    text-decoration: line-through;
+}
+
+.delete {
+    margin-left: 30px;
+}

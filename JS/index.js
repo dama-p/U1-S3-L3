@@ -13,6 +13,22 @@ function addTask() {
     const li = document.createElement("li");
     taskList.appendChild(li);
     li.innerText = taskText;
+
+    li.onclick = function () {
+        li.classList.toggle("strike")
+    }
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Delete";
+    deleteBtn.addEventListener("click", deleteTask);
+    li.appendChild(deleteBtn);
+    deleteBtn.classList.add("delete")
 }
+
+function deleteTask(e) {
+    const task = e.currentTarget.parentElement;
+    taskList.removeChild(task);
+}
+
 
 
