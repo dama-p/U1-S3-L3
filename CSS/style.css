@@ -33,6 +33,10 @@ h1 {
     text-decoration: line-through;
 }
 
+li {
+    padding-block: 10px;
+}
+
 .delete {
     margin-left: 30px;
 }
